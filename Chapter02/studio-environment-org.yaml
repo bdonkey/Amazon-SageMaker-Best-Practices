@@ -6,7 +6,7 @@ Parameters:
   StudioDomainID:
     AllowedPattern: '[A-Za-z0-9-]{1,63}'
     Description: ID of the Studio Domain where user should be created (ex. d-xxxnxxnxxnxn)
-    Default: d-cp9ohkhevdkl
+    Default: d-xxxnxxnxxnxn
     Type: String
   Team:
     AllowedValues:
@@ -19,11 +19,11 @@ Parameters:
     Description: User profile name
     AllowedPattern: '^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}'
     Type: String
-    Default: 'scottdev'
+    Default: 'UserName'
   VPCSecurityGroupIds:
     Description: The VPC security group IDs, in the form sg-xxxxxxxx.  
     Type: CommaDelimitedList
-    Default: [sg-04098a5b6cff28794,sg-081efe9c3b016d4fb]
+    Default: 'Replace with the security group id(s) for your VPC'
 Resources:
   StudioUser:
     Type: AWS::SageMaker::UserProfile
